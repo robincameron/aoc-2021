@@ -9,13 +9,11 @@ namespace Aoc2021.Day02
         {
 			IEnumerable<Tuple<string, int>> data = TransformData(_getData);
 
-			Console.WriteLine(
-                @$"Day_2_pt_1: 
+			Console.WriteLine(@$"Day_2_pt_1: 
 			        Expected: 1728414
 			        Actual  : { Day02_Part_1(data)}");
 
-			Console.WriteLine(
-                @$"Day_2_pt_2: 
+			Console.WriteLine(@$"Day_2_pt_2: 
 			        Expected: 1765720035
 			        Actual  : { Day02_Part_2(data)}");
         }

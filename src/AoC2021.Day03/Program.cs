@@ -9,13 +9,11 @@ namespace Aoc2021.Day03
         {
             int[][] data = TransformData(_getData);
 
-            Console.WriteLine(
-                @$"Day_3_pt_1: 
+            Console.WriteLine(@$"Day_3_pt_1: 
 			        Expected: 3633500
 			        Actual  : { Day03_Part_1(data)}");
 
-            Console.WriteLine(
-                @$"Day_3_pt_2: 
+            Console.WriteLine(@$"Day_3_pt_2: 
 			        Expected: 4550283
 			        Actual  : { Day03_Part_2(data)}");
         }
