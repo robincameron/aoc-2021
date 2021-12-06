@@ -1,10 +1,8 @@
-﻿using System.Diagnostics;
-using System.Runtime.CompilerServices;
+﻿using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo("Aoc2021.Day04.UnitTests")]
 namespace AoC2021.Day04
 {
-    //[DebuggerDisplay("Value = {Value}; IsMarked = {IsMarked}")]
     internal class BingoBoard
     {
         internal BingoBoard(int[][] input)
