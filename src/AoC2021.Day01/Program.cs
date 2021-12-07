@@ -28,6 +28,8 @@ namespace Aoc2021.Day01
 			return input.Skip(3).Select((x, i) => x > input[i]).Count(x => x);
 		}
 
-		private static readonly Func<int[]> _getData = () => File.ReadAllLines(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "day-01.txt")).Select(i => int.Parse(i)).ToArray();
+		private static readonly Func<int[]> _getData = () => 
+			File.ReadAllLines(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "day-01.txt"))
+			.Select(i => int.Parse(i)).ToArray();
 	}
 }

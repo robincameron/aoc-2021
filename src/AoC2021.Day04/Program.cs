@@ -54,7 +54,7 @@ namespace Aoc2021.Day04
 
 			var bingoBoards = new List<BingoBoard>();
 
-            for (int i = 2; i < file.Length; i = i + 6)
+            for (int i = 2; i < file.Length; i += 6)
             {
 				bingoBoards.Add(new BingoBoard(new[]
 				{

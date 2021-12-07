@@ -17,6 +17,17 @@ namespace AoC2021.Day02.UnitTests
             Assert.Equal(expected, result);
         }
 
+        [Theory]
+        [InlineData("down", 5, 0, 5 )]
+        [InlineData("forward", 5, 5, 0 )]
+        [InlineData("up", 5, 0, -5)]
+        public void Verify_ApplyDirection_Part1(string direction, int magnitude, int expectedX, int expectedY)
+        {
+            var actual = ApplyDirection_Part1((0,0), (direction, magnitude));
+
+            Assert.Equal((expectedX, expectedY), actual);
+        }
+
         [Fact]
         public void Verify_Day02_Part_2()
         {
